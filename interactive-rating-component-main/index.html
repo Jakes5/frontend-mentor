@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sundanese:wght@400;700&family=Noto+Sans+TC:wght@900&family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+
+    <!-- Rating state start -->
+    <div class="main">
+
+      <body>
+        <div class="button-container">
+          <div class="Rate-button">Rate Us!</div>
+        </div>
+
+      <div class="rating-box hidden">
+          <img class="star-img" src="./images/icon-star.svg" alt="">
+        <div class="rating-desc">
+          <h2>How did we do?</h2>
+          <p>
+            Please let us know how we did with your support request. All feedback
+            is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="rating-submit">
+          <div class="ratings">
+            <ul>
+              <li class="rating-1">1</li>
+              <li class="rating-2">2</li>
+              <li class="rating-3">3</li>
+              <li class="rating-4">4</li>
+              <li class="rating-5">5</li>
+            </ul>
+          </div>
+          <button class="submit-btn">Submit</button>
+          <div class="submit-error hidden">
+            <p>Please select a rating</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank-you-box hidden">
+        <img class="thank-you-img" src="./images/illustration-thank-you.svg" alt="">
+        <p class="selected-rating">You selected <span class="rating">0</span> out of 5</p>       
+        <h2>Thank you!</h2> 
+        <p>We appreciate you taking the time to give a rating.
+          If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+
+      <div class="attribution">
+        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a>. Coded by <a href="#">Jaco van der Spuy</a>.</p>  
+      </div>
+      <!-- Thank you state end -->
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
